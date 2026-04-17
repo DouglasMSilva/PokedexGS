@@ -15,6 +15,7 @@ export const listPokemons = async (req: Request, res: Response) => {
 
     } catch (error) {
         res.status(500).json({ error: "Erro ao buscar pokémons." });
+        console.log(error);
     }
 }
 
@@ -27,7 +28,7 @@ export const getPokemon = async (req: Request, res: Response) => {
 
         // chama o model
 
-        const pokemon = getPokemonById(id);
+        const pokemon = await getPokemonById(id);
 
         // se não encontrar
 
