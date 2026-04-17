@@ -13,7 +13,7 @@ app.use(cors());
 // USANDO AS ROTAS
 
 // ROTA TESTE (IMPORTANTE)
-app.get("/", (req: Request, res: Response) => {
+app.get("/pokemons", (req: Request, res: Response) => {
   res.send("API rodando");
 });
 
