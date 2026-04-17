@@ -6,11 +6,11 @@ const router = Router();
 // ROTA: LISTAR TODOS OS POKÉMONS
 
 // GET /pokemons
-router.get("/pokemons", listPokemons);
+router.get("/", listPokemons);
 
 // ROTA: BUSCAR UM POKÉMON POR ID
 // GET /pokemons/1
 
-router.get("/pokemons/:id", getPokemon);
+router.get("/:id", getPokemon);
 
 export default router;
